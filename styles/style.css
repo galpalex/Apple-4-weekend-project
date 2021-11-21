@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/sf-pro-text_regular.woff2") format("woff2");
+  src: url("../assets/fonts/sf-pro-text_semibold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/sf-pro-display_regular.woff2") format("woff2");
+  src: url("../assets/fonts/sf-pro-display_semibold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SF Pro Icons";
+  src: url("../assets/fonts/sf-pro-icons_regular.woff2") format("woff2");
+}
+
+:root {
+  --primary-color: #0066cc;
+  --secondary-color: #6e6e73;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  overflow: hidden;
+}
+#main-nav {
+  background: #333333;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  opacity: 0.95;
+}
+#main-nav ul li a {
+  padding: 1.3rem;
+  color: #cccccc;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  font-family: "SF Pro Text", serif;
+}
+#main-nav ul li a:hover {
+  color: white;
+}
+#main-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo i {
+  color: #cccccc;
+}
+
+.logo i:hover {
+  color: white;
+}
+
+.nextToNav {
+  margin: auto;
+  background: #e34140;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0.7rem;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "SF Pro Text", serif;
+}
+.nextToNav a {
+  color: white;
+}
+.nextToNav a:hover {
+  border-bottom: 1px white solid;
+}
+.pink {
+  background-color: #eaf2fc;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+}
+.apple {
+  width: 70px;
+}
+.apple img {
+  margin-bottom: 6px;
+}
+.white {
+  color: white;
+}
+.big {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: "SF Pro Text", serif;
+  margin: 20px;
+}
+.midle {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: "SF Pro Text", serif;
+  padding: 10px;
+}
+.midle a {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "SF Pro Text", serif;
+  color: white;
+}
+.midle a:hover {
+  border-bottom: 2px white solid;
+}
+.midle .play i {
+  font-size: 20px;
+}
+
+.midleContent {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "SF Pro Text", serif;
+  padding: 10px;
+}
+.link {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-family: "SF Pro Display", serif;
+  padding-top: 25px;
+  color: var(--primary-color);
+}
+.link a {
+  color: var(--primary-color);
+}
+.link a:hover {
+  border-bottom: 2px var(--primary-color) solid;
+}
+.linkContent {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "SF Pro Text", serif;
+  padding-top: 25px;
+  color: var(--primary-color);
+}
+.linkContent a {
+  color: var(--primary-color);
+}
+.linkContent a:hover {
+  border-bottom: 2px var(--primary-color) solid;
+}
+.linkContent span {
+  font-size: 7px;
+}
+
+.threeImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-bottom: 10px;
+}
+.iphone {
+  background-image: url(../assets/img/iphone13.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+}
+
+.space {
+  height: 13px;
+}
+
+.superpower {
+  background-image: url(../assets/img/hero_iphone.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+}
+.superpower p {
+  color: #f5bae2;
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+    "box-1 box-2"
+    "box-3 box-4"
+    "box-5 box-6";
+  grid-gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.box {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+}
+
+.box-1 {
+  background-image: url(../assets/img/macbook.jpg);
+}
+.box-2 {
+  background-image: url(../assets/img/watch.jpg);
+}
+.box-2 img {
+  width: 130px;
+}
+.box-2 h3 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: "SF Pro Text", serif;
+  padding: 5px;
+  color: #c65f21;
+}
+.box-3 {
+  background-image: url(../assets/img/homepod.jpg);
+}
+
+.box-4 {
+  background-image: url(../assets/img/lego.jpg);
+}
+.box-4 i {
+  font-size: 42px;
+}
+.arrow i {
+  font-size: 15px;
+  transform: rotateZ(-45deg);
+}
+
+.box-5 {
+  background-image: url(../assets/img/card.jpg);
+  text-align: center;
+}
+.box-5 img {
+  width: 120px;
+}
+.box-6 {
+  background-image: url(../assets/img/promo.jpg);
+  background-position: 50% 30%;
+}
+.box-6 img {
+  width: 50px;
+}
+.imgBox6 img {
+  width: 300px;
+  margin-top: 265px;
+}
+.box-6 i {
+  font-size: 39px;
+  color: white;
+}
+
+.bottom {
+  background: #f5f5f7;
+
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  font-family: "SF Pro Text", serif;
+  color: var(--secondary-color);
+}
+.line {
+  height: 5px;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 8px 0px;
+}
+.bottom a {
+  color: var(--secondary-color);
+}
+.bottom a:hover {
+  border-bottom: 1px solid var(--secondary-color);
+}
+.bottomTable {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.bottomTable div {
+  padding: 5px;
+}
+.bottomTable div strong {
+  color: black;
+}
+#finalSentence a {
+  color: var(--primary-color);
+}
